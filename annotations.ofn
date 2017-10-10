@@ -1,0 +1,357 @@
+Prefix(:=<http://purl.org/phenoscape/demo/homology/annotations.ofn#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.org/phenoscape/demo/homology/annotations.ofn>
+Import(<http://purl.obolibrary.org/obo/bspo.owl>)
+Import(<http://purl.obolibrary.org/obo/uberon/ext.owl>)
+Import(<http://purl.obolibrary.org/obo/vto.owl>)
+Import(<http://purl.obolibrary.org/obo/pato.owl>)
+Import(<http://purl.org/phenoscape/demo/vto_ncbi.owl>)
+Import(<http://purl.obolibrary.org/obo/ro.owl>)
+Import(<http://purl.org/phenoscape/demo/phenoscape_homology.owl>)
+
+Declaration(Class(:CharacterState))
+Declaration(NamedIndividual(:cs10))
+Declaration(NamedIndividual(:cs11))
+Declaration(NamedIndividual(:cs12))
+Declaration(NamedIndividual(:cs13))
+Declaration(NamedIndividual(:cs2))
+Declaration(NamedIndividual(:cs3))
+Declaration(NamedIndividual(:cs4))
+Declaration(NamedIndividual(:cs5))
+Declaration(NamedIndividual(:cs6))
+Declaration(NamedIndividual(:cs7))
+Declaration(NamedIndividual(:cs8))
+Declaration(NamedIndividual(:cs9))
+Declaration(NamedIndividual(:e10))
+Declaration(NamedIndividual(:e11))
+Declaration(NamedIndividual(:e12))
+Declaration(NamedIndividual(:e13))
+Declaration(NamedIndividual(:e2))
+Declaration(NamedIndividual(:e3))
+Declaration(NamedIndividual(:e4))
+Declaration(NamedIndividual(:e5))
+Declaration(NamedIndividual(:e6))
+Declaration(NamedIndividual(:e7))
+Declaration(NamedIndividual(:e8))
+Declaration(NamedIndividual(:e9))
+Declaration(NamedIndividual(:q10))
+Declaration(NamedIndividual(:q11))
+Declaration(NamedIndividual(:q12))
+Declaration(NamedIndividual(:q13))
+Declaration(NamedIndividual(:q2))
+Declaration(NamedIndividual(:q3))
+Declaration(NamedIndividual(:q4))
+Declaration(NamedIndividual(:q5))
+Declaration(NamedIndividual(:q6))
+Declaration(NamedIndividual(:q7))
+Declaration(NamedIndividual(:q8))
+Declaration(NamedIndividual(:q9))
+Declaration(NamedIndividual(:re10))
+Declaration(NamedIndividual(:re12))
+Declaration(NamedIndividual(:re2))
+Declaration(NamedIndividual(:re3))
+Declaration(NamedIndividual(:re4))
+Declaration(NamedIndividual(:re5))
+Declaration(NamedIndividual(:re9))
+Declaration(NamedIndividual(:t10))
+Declaration(NamedIndividual(:t11))
+Declaration(NamedIndividual(:t12))
+Declaration(NamedIndividual(:t13))
+Declaration(NamedIndividual(:t2))
+Declaration(NamedIndividual(:t3))
+Declaration(NamedIndividual(:t4))
+Declaration(NamedIndividual(:t5))
+Declaration(NamedIndividual(:t6))
+Declaration(NamedIndividual(:t7))
+Declaration(NamedIndividual(:t8))
+Declaration(NamedIndividual(:t9))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
+Declaration(AnnotationProperty(:character_text))
+Declaration(AnnotationProperty(:state_text))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :cs10 (Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs10 "Parenti 2008"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs10 "Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher"^^xsd:string)
+
+# Individual: :cs11 (Hind limb proportions: normal length)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs11 "Gao and Wang 2001"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs11 "Hind limb proportions: normal length"^^xsd:string)
+
+# Individual: :cs12 (Manual phalanges, Hyperphalangy on manus, presence: absent)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs12 "O'Leary et al. 2013"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs12 "Manual phalanges, Hyperphalangy on manus, presence: absent"^^xsd:string)
+
+# Individual: :cs13 (Torsion of the first finger (TORSION): present)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs13 "Lathrop 1997"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs13 "Torsion of the first finger (TORSION): present"^^xsd:string)
+
+# Individual: :cs2 (Origin of pectoral fin: anterior to vertical line tangential to posteriormost border of cleithrum)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs2 "Lucena-Menezes 1998"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs2 "Origin of pectoral fin: anterior to vertical line tangential to posteriormost border of cleithrum"^^xsd:string)
+
+# Individual: :cs3 (Forelimb-hindlimb length ratio: less than 0.55)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs3 "Nesbitt 2011"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs3 "Forelimb-hindlimb length ratio: less than 0.55"^^xsd:string)
+
+# Individual: :cs4 (Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs4 "O'Leary et al. 2013"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs4 "Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing"^^xsd:string)
+
+# Individual: :cs5 (Pes, Digit I, length relative to digit II: Digit I shorter than digit II)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs5 "O'Leary et al. 2013"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs5 "Pes, Digit I, length relative to digit II: Digit I shorter than digit II"^^xsd:string)
+
+# Individual: :cs6 (Prehallux, presence: present)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs6 "O'Leary et al. 2013"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs6 "Prehallux, presence: present"^^xsd:string)
+
+# Individual: :cs7 (Prehallux: present as small hindfoot element)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs7 "Gao and Chen 2004"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs7 "Prehallux: present as small hindfoot element"^^xsd:string)
+
+# Individual: :cs8 (Archipterygial pectoral fin: yes)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs8 "Swartz 2012"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs8 "Archipterygial pectoral fin: yes"^^xsd:string)
+
+# Individual: :cs9 (Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :cs9 "Ruta 2011"^^xsd:string)
+AnnotationAssertion(rdfs:label :cs9 "Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae"^^xsd:string)
+
+# Individual: :e10 (:e10)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000152> :e10)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e10 :t10)
+
+# Individual: :e11 (:e11)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002103> :e11)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e11 :t11)
+
+# Individual: :e12 (:e12)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002398> :e12)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e12 :t12)
+
+# Individual: :e13 (:e13)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0001463> :e13)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e13 :t13)
+
+# Individual: :e2 (:e2)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000151> :e2)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e2 :t2)
+
+# Individual: :e3 (:e3)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002102> :e3)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e3 :t3)
+
+# Individual: :e4 (:e4)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000024> :e4)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e4 :t4)
+
+# Individual: :e5 (:e5)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003631> :e5)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e5 :t5)
+
+# Individual: :e6 (:e6)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0012136> :e6)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e6 :t6)
+
+# Individual: :e7 (:e7)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0012136> :e7)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e7 :t7)
+
+# Individual: :e8 (:e8)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_4200003> :e8)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e8 :t8)
+
+# Individual: :e9 (:e9)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000976> :e9)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e9 :t9)
+
+# Individual: :q10 (:q10)
+
+AnnotationAssertion(rdfs:comment :q10 "Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002261> :q10)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q10 :e10)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q10 :re10)
+
+# Individual: :q11 (:q11)
+
+AnnotationAssertion(rdfs:comment :q11 "Hind limb proportions: normal length"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q11)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q11 :e11)
+
+# Individual: :q12 (:q12)
+
+AnnotationAssertion(rdfs:comment :q12 "Manual phalanges, Hyperphalangy on manus, presence: absent"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002002> :q12)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q12 :e12)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q12 :re12)
+
+# Individual: :q13 (:q13)
+
+AnnotationAssertion(rdfs:comment :q13 "Torsion of the first finger (TORSION): present"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002445> :q13)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q13 :e13)
+
+# Individual: :q2 (:q2)
+
+AnnotationAssertion(rdfs:comment :q2 "Origin of pectoral fin: anterior to vertical line tangential to posteriorrnost border of cleithrum"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000140> :q2)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q2 :e2)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q2 :re2)
+
+# Individual: :q3 (:q3)
+
+AnnotationAssertion(rdfs:comment :q3 "Forelimb-hindlimb length ratio: less than 0.55"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000122> :q3)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q3 :e3)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q3 :re3)
+
+# Individual: :q4 (:q4)
+
+AnnotationAssertion(rdfs:comment :q4 "Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000141> :q4)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q4 :e4)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q4 :re4)
+
+# Individual: :q5 (:q5)
+
+AnnotationAssertion(rdfs:comment :q5 "Pes, Digit I, length relative to digit II: Digit I shorter than digit II"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q5)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q5 :e5)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q5 :re5)
+
+# Individual: :q6 (:q6)
+
+AnnotationAssertion(rdfs:comment :q6 "Prehallux, presence: present"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q6)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q6 :e6)
+
+# Individual: :q7 (:q7)
+
+AnnotationAssertion(rdfs:comment :q7 "Prehallux: present as small hindfoot element"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q7)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q7 :e7)
+
+# Individual: :q8 (:q8)
+
+AnnotationAssertion(rdfs:comment :q8 "Archipterygial pectoral fin: yes"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q8)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q8 :e8)
+
+# Individual: :q9 (:q9)
+
+AnnotationAssertion(rdfs:comment :q9 "Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q9)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q9 :e9)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q9 :re9)
+
+# Individual: :re10 (:re10)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000154> :re10)
+
+# Individual: :re12 (:re12)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003221> :re12)
+
+# Individual: :re2 (:re2)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0004741> :re2)
+
+# Individual: :re3 (:re3)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002103> :re3)
+
+# Individual: :re5 (:re5)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003632> :re5)
+
+# Individual: :re9 (:re9)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0011677> :re9)
+
+# Individual: :t10 (:t10)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0055067> :t10)
+
+# Individual: :t11 (:t11)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9030624> :t11)
+
+# Individual: :t12 (:t12)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0011379> :t12)
+
+# Individual: :t13 (:t13)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0002590> :t13)
+
+# Individual: :t2 (:t2)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0038614> :t2)
+
+# Individual: :t3 (:t3)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9007897> :t3)
+
+# Individual: :t4 (:t4)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0008902> :t4)
+
+# Individual: :t5 (:t5)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0008116> :t5)
+
+# Individual: :t6 (:t6)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0009815> :t6)
+
+# Individual: :t7 (:t7)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9003126> :t7)
+
+# Individual: :t8 (:t8)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9011119> :t8)
+
+# Individual: :t9 (:t9)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9001290> :t9)
+
+
+)
