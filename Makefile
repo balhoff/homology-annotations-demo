@@ -5,9 +5,9 @@
 #########################################################################################################################
 
 .PHONY: all
-all: import.ofn
+all: minimal.ofn
 
-import.owl: import-terms.txt
+minimal.ofn: import-terms.txt
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
 	robot extract --method BOT --input annotations.ofn --term-file import-terms.txt --output $@
 
