@@ -7,27 +7,57 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.org/phenoscape/demo/homology/annotations.ofn>
-Import(<http://purl.obolibrary.org/obo/bspo.owl>)
-Import(<http://purl.obolibrary.org/obo/uberon/ext.owl>)
-Import(<http://purl.obolibrary.org/obo/vto.owl>)
-Import(<http://purl.obolibrary.org/obo/pato.owl>)
-Import(<http://purl.org/phenoscape/demo/vto_ncbi.owl>)
-Import(<http://purl.obolibrary.org/obo/ro.owl>)
-Import(<http://purl.org/phenoscape/demo/phenoscape_homology.owl>)
 
-Declaration(Class(:CharacterState))
-Declaration(NamedIndividual(:cs10))
-Declaration(NamedIndividual(:cs11))
-Declaration(NamedIndividual(:cs12))
-Declaration(NamedIndividual(:cs13))
-Declaration(NamedIndividual(:cs2))
-Declaration(NamedIndividual(:cs3))
-Declaration(NamedIndividual(:cs4))
-Declaration(NamedIndividual(:cs5))
-Declaration(NamedIndividual(:cs6))
-Declaration(NamedIndividual(:cs7))
-Declaration(NamedIndividual(:cs8))
-Declaration(NamedIndividual(:cs9))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000467>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000574>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002261>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002445>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000152>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000976>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002398>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002531>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003221>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003631>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003632>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004741>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011677>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4200003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0002590>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008902>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0009815>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0011379>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0038614>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0055067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9001290>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9003126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9007897>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9011119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9030624>))
+Declaration(Class(:Question1))
+Declaration(Class(:Question2))
+Declaration(Class(:Question3a))
+Declaration(Class(:Question3b))
+Declaration(Class(:Question4))
+Declaration(Class(:QuestionTaxon))
+Declaration(Class(:_CompetencyQuestion))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002503>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_HOM0000007>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_HOM0000027>))
 Declaration(NamedIndividual(:e10))
 Declaration(NamedIndividual(:e11))
 Declaration(NamedIndividual(:e12))
@@ -56,7 +86,6 @@ Declaration(NamedIndividual(:re10))
 Declaration(NamedIndividual(:re12))
 Declaration(NamedIndividual(:re2))
 Declaration(NamedIndividual(:re3))
-Declaration(NamedIndividual(:re4))
 Declaration(NamedIndividual(:re5))
 Declaration(NamedIndividual(:re9))
 Declaration(NamedIndividual(:t10))
@@ -72,285 +101,327 @@ Declaration(NamedIndividual(:t7))
 Declaration(NamedIndividual(:t8))
 Declaration(NamedIndividual(:t9))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
-Declaration(AnnotationProperty(:character_text))
-Declaration(AnnotationProperty(:state_text))
 
 
+
+############################
+#   Classes
+############################
+
+# Class: :Question1 (:Question1)
+
+AnnotationAssertion(rdfs:comment :Question1 "Queries for historical homologues of a structure should return all structures historically homologous to it, and their subtypes, but not their parts or serially homologous structures. For example, given a historical homology relation between the forelimb and pectoral fin (Figure 2), a user would expect that a phenotype query for historical homologues of ‘pectoral fin’ would return phenotypes pertaining to ‘forelimb’ and subtypes of forelimb, such as ‘forelimb wing’ (Table X, rows 2 and 3), but it would not return the serial homologues ‘pelvic fin’ or ‘hindlimb (Table X, ’, nor forelimb parts such as manus or manual digit 1.
+
+Expect: 3, 4
+Not: 10, 11, 12, 13"^^xsd:string)
+EquivalentClasses(:Question1 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0000151>)))
+SubClassOf(:Question1 :_CompetencyQuestion)
+
+# Class: :Question2 (:Question2)
+
+AnnotationAssertion(rdfs:comment :Question2 "Queries for historical homologues of a structure should include historical homologues of that structure’s superclass. If a superclass of the search term is asserted as homologous to another term, the search term should “inherit” that assertion. For example, if a user queries for homologues of ‘forelimb wing’ where its superclass is ‘forelimb’ and ‘forelimb’ is asserted homologous to ‘pectoral fin’ (Figure 2), then the query should return phenotypes for ‘forelimb’, ‘pectoral fin’ and its subclass ‘archipterygial fin’ as results.
+
+Expect: 2, 3, 8"^^xsd:string)
+EquivalentClasses(:Question2 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0000024>)))
+SubClassOf(:Question2 :_CompetencyQuestion)
+
+# Class: :Question3a (:Question3a)
+
+AnnotationAssertion(rdfs:comment :Question3a "Queries for historical homologues of a structure at a developmental stage should include homologous structures and subclasses, but not those that later develop from that structure.  For example, if a ‘limb bud’ and a ‘paired fin bud’ are related as homologues, a user would expect a query for homologues of ‘paired fin bud’ to return phenotypes for ‘limb bud’ and its subtypes (i.e., ‘forelimb bud’ and ‘hindlimb bud’), but not parts (e.g., ‘limb bud mesenchyme’).  A user would not expect to return structures that later form in the course of development (e.g., for a query for historical homologues of the ‘paired fin bud’, a user would not expect ‘limb’) (Figure 2)."^^xsd:string)
+EquivalentClasses(:Question3a ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0002531>)))
+SubClassOf(:Question3a :_CompetencyQuestion)
+
+# Class: :Question3b (:Question3b)
+
+AnnotationAssertion(rdfs:comment :Question3b "Likewise, a query for historical homologues of a particular structure should not return its developmental precursor (e.g., a query for the homologues of ‘paired fin’ should not return ‘limb bud’). This is because homology between structures is not implied across developmental stages (Figure 2)."^^xsd:string)
+EquivalentClasses(:Question3b ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0002534>)))
+SubClassOf(:Question3b :_CompetencyQuestion)
+
+# Class: :Question4 (:Question4)
+
+AnnotationAssertion(rdfs:comment :Question4 "Queries for serial homologues of a structure should return any serial homologue and its subtype(s), but not it parts, and not precursors or later developing structures. From a query on serial homologues of ‘hindlimb’, a user would expect to find ‘forelimb’ and its subtype (‘forelimb wing’) in the search results, but not the parts of forelimb (e.g., ‘humerus’). This is because serial homology between structures does not imply homology of their parts (Figure 2).
+
+Expect: 3, 4
+Not: 9"^^xsd:string)
+EquivalentClasses(:Question4 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0002103>)))
+SubClassOf(:Question4 :_CompetencyQuestion)
+
+# Class: :QuestionTaxon (:QuestionTaxon)
+
+AnnotationAssertion(rdfs:comment :QuestionTaxon "In cases where the homology statement applies to a subset of taxa which possess the anatomical structure, though other taxa may ostensibly possess it as well, a user expects results for only the subset of taxa with the homologous structure. For example, some users might expect queries for homologues of pedal digit 1 to return phenotypes for the ‘prehallux’ in only anurans.  This is because some author (Galis et al., 2001) stated that pedal digit 1 in taxon X is homologous to prehallux in anurans. However, other authors (e.g., Fabrezi, 2001, Galis et al., 2001) present evidence to the contrary.  Moreover a structure named ‘prehallux’ exists in non-anuran taxa, e.g., mammals, and the homology relationship across taxa is uncertain.  Rather than restrict users to particular views of homology or create taxon specific anatomical classes (e.g., ‘anuran prehallux’), we display homology statements in the KB and allow them to be filtered by taxon.  In the above case, for example, a user could decide to view only results for anurans.
+
+Expect: 7
+Not: 6"^^xsd:string)
+EquivalentClasses(:QuestionTaxon ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0003631>)))
+SubClassOf(:QuestionTaxon :_CompetencyQuestion)
 
 
 ############################
 #   Named Individuals
 ############################
 
-# Individual: :cs10 (Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher)
+# Individual: :e10 (pelvic fin#e10)
 
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs10 "Parenti 2008"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs10 "Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher"^^xsd:string)
-
-# Individual: :cs11 (Hind limb proportions: normal length)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs11 "Gao and Wang 2001"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs11 "Hind limb proportions: normal length"^^xsd:string)
-
-# Individual: :cs12 (Manual phalanges, Hyperphalangy on manus, presence: absent)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs12 "O'Leary et al. 2013"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs12 "Manual phalanges, Hyperphalangy on manus, presence: absent"^^xsd:string)
-
-# Individual: :cs13 (Torsion of the first finger (TORSION): present)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs13 "Lathrop 1997"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs13 "Torsion of the first finger (TORSION): present"^^xsd:string)
-
-# Individual: :cs2 (Origin of pectoral fin: anterior to vertical line tangential to posteriormost border of cleithrum)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs2 "Lucena-Menezes 1998"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs2 "Origin of pectoral fin: anterior to vertical line tangential to posteriormost border of cleithrum"^^xsd:string)
-
-# Individual: :cs3 (Forelimb-hindlimb length ratio: less than 0.55)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs3 "Nesbitt 2011"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs3 "Forelimb-hindlimb length ratio: less than 0.55"^^xsd:string)
-
-# Individual: :cs4 (Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs4 "O'Leary et al. 2013"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs4 "Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing"^^xsd:string)
-
-# Individual: :cs5 (Pes, Digit I, length relative to digit II: Digit I shorter than digit II)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs5 "O'Leary et al. 2013"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs5 "Pes, Digit I, length relative to digit II: Digit I shorter than digit II"^^xsd:string)
-
-# Individual: :cs6 (Prehallux, presence: present)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs6 "O'Leary et al. 2013"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs6 "Prehallux, presence: present"^^xsd:string)
-
-# Individual: :cs7 (Prehallux: present as small hindfoot element)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs7 "Gao and Chen 2004"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs7 "Prehallux: present as small hindfoot element"^^xsd:string)
-
-# Individual: :cs8 (Archipterygial pectoral fin: yes)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs8 "Swartz 2012"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs8 "Archipterygial pectoral fin: yes"^^xsd:string)
-
-# Individual: :cs9 (Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae)
-
-AnnotationAssertion(<http://purl.org/dc/terms/source> :cs9 "Ruta 2011"^^xsd:string)
-AnnotationAssertion(rdfs:label :cs9 "Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae"^^xsd:string)
-
-# Individual: :e10 (:e10)
-
+AnnotationAssertion(rdfs:label :e10 "pelvic fin#e10"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000152> :e10)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e10 :t10)
 
-# Individual: :e11 (:e11)
+# Individual: :e11 (hindlimb#e11)
 
+AnnotationAssertion(rdfs:label :e11 "hindlimb#e11"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002103> :e11)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e11 :t11)
 
-# Individual: :e12 (:e12)
+# Individual: :e12 (manus#e12)
 
+AnnotationAssertion(rdfs:label :e12 "manus#e12"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002398> :e12)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e12 :t12)
 
-# Individual: :e13 (:e13)
+# Individual: :e13 (manual digit 1#e13)
 
+AnnotationAssertion(rdfs:label :e13 "manual digit 1#e13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0001463> :e13)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e13 :t13)
 
-# Individual: :e2 (:e2)
+# Individual: :e2 (pectoral fin#e2)
 
+AnnotationAssertion(rdfs:label :e2 "pectoral fin#e2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000151> :e2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e2 :t2)
 
-# Individual: :e3 (:e3)
+# Individual: :e3 (forelimb#e3)
 
+AnnotationAssertion(rdfs:label :e3 "forelimb#e3"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002102> :e3)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e3 :t3)
 
-# Individual: :e4 (:e4)
+# Individual: :e4 (forelimb wing#e4)
 
+AnnotationAssertion(rdfs:label :e4 "forelimb wing#e4"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000024> :e4)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e4 :t4)
 
-# Individual: :e5 (:e5)
+# Individual: :e5 (pedal digit 1#e5)
 
+AnnotationAssertion(rdfs:label :e5 "pedal digit 1#e5"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003631> :e5)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e5 :t5)
 
-# Individual: :e6 (:e6)
+# Individual: :e6 (prehallux#e6)
 
+AnnotationAssertion(rdfs:label :e6 "prehallux#e6"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0012136> :e6)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e6 :t6)
 
-# Individual: :e7 (:e7)
+# Individual: :e7 (prehallux#e7)
 
+AnnotationAssertion(rdfs:label :e7 "prehallux#e7"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0012136> :e7)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e7 :t7)
 
-# Individual: :e8 (:e8)
+# Individual: :e8 (archipterygial fin#e8)
 
+AnnotationAssertion(rdfs:label :e8 "archipterygial fin#e8"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_4200003> :e8)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e8 :t8)
 
-# Individual: :e9 (:e9)
+# Individual: :e9 (humerus#e9)
 
+AnnotationAssertion(rdfs:label :e9 "humerus#e9"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000976> :e9)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e9 :t9)
 
-# Individual: :q10 (:q10)
+# Individual: :q10 (located in#q10)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q10 "Parenti 2008"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q10 "Pelvic-fin position: pelvic fins posterior, in line with pleural rib of vertebra eight or higher"^^xsd:string)
+AnnotationAssertion(rdfs:label :q10 "located in#q10"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002261> :q10)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q10 :e10)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q10 :re10)
 
-# Individual: :q11 (:q11)
+# Individual: :q11 (decreased length#q11)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q11 "Gao and Wang 2001"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q11 "Hind limb proportions: normal length"^^xsd:string)
+AnnotationAssertion(rdfs:label :q11 "decreased length#q11"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q11)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q11 :e11)
 
-# Individual: :q12 (:q12)
+# Individual: :q12 (has extra parts of type#q12)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q12 "O'Leary et al. 2013"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q12 "Manual phalanges, Hyperphalangy on manus, presence: absent"^^xsd:string)
+AnnotationAssertion(rdfs:label :q12 "has extra parts of type#q12"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002002> :q12)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q12 :e12)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q12 :re12)
 
-# Individual: :q13 (:q13)
+# Individual: :q13 (torsioned#q13)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q13 "Lathrop 1997"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q13 "Torsion of the first finger (TORSION): present"^^xsd:string)
+AnnotationAssertion(rdfs:label :q13 "torsioned#q13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002445> :q13)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q13 :e13)
 
-# Individual: :q2 (:q2)
+# Individual: :q2 (position#q2)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q2 "Lucena-Menezes 1998"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q2 "Origin of pectoral fin: anterior to vertical line tangential to posteriorrnost border of cleithrum"^^xsd:string)
+AnnotationAssertion(rdfs:label :q2 "position#q2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000140> :q2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q2 :e2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q2 :re2)
 
-# Individual: :q3 (:q3)
+# Individual: :q3 (length#q3)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q3 "Nesbitt 2011"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q3 "Forelimb-hindlimb length ratio: less than 0.55"^^xsd:string)
+AnnotationAssertion(rdfs:label :q3 "length#q3"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000122> :q3)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q3 :e3)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q3 :re3)
 
-# Individual: :q4 (:q4)
+# Individual: :q4 (structure#q4)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q4 "O'Leary et al. 2013"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q4 "Patagia: Pattern of wing folding: wings folded by flexing all phalanges in digits III, IV, and V anteriorly toward the underside of the wing"^^xsd:string)
+AnnotationAssertion(rdfs:label :q4 "structure#q4"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000141> :q4)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q4 :e4)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q4 :re4)
 
-# Individual: :q5 (:q5)
+# Individual: :q5 (decreased length#q5)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q5 "O'Leary et al. 2013"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q5 "Pes, Digit I, length relative to digit II: Digit I shorter than digit II"^^xsd:string)
+AnnotationAssertion(rdfs:label :q5 "decreased length#q5"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q5)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q5 :e5)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q5 :re5)
 
-# Individual: :q6 (:q6)
+# Individual: :q6 (present#q6)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q6 "O'Leary et al. 2013"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q6 "Prehallux, presence: present"^^xsd:string)
+AnnotationAssertion(rdfs:label :q6 "present#q6"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q6)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q6 :e6)
 
-# Individual: :q7 (:q7)
+# Individual: :q7 (present#q7)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q7 "Gao and Chen 2004"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q7 "Prehallux: present as small hindfoot element"^^xsd:string)
+AnnotationAssertion(rdfs:label :q7 "present#q7"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q7)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q7 :e7)
 
-# Individual: :q8 (:q8)
+# Individual: :q8 (present#q8)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q8 "Swartz 2012"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q8 "Archipterygial pectoral fin: yes"^^xsd:string)
+AnnotationAssertion(rdfs:label :q8 "present#q8"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q8)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q8 :e8)
 
-# Individual: :q9 (:q9)
+# Individual: :q9 (decreased length#q9)
 
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q9 "Ruta 2011"^^xsd:string)
 AnnotationAssertion(rdfs:comment :q9 "Humerus length: or smaller than combined length of two and a half mid-trunk vertebrae"^^xsd:string)
+AnnotationAssertion(rdfs:label :q9 "decreased length#q9"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q9)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q9 :e9)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q9 :re9)
 
-# Individual: :re10 (:re10)
+# Individual: :re10 (posterior region of body#re10)
 
+AnnotationAssertion(rdfs:label :re10 "posterior region of body#re10"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000154> :re10)
 
-# Individual: :re12 (:re12)
+# Individual: :re12 (phalanx#re12)
 
+AnnotationAssertion(rdfs:label :re12 "phalanx#re12"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003221> :re12)
 
-# Individual: :re2 (:re2)
+# Individual: :re2 (cleithrum#re2)
 
+AnnotationAssertion(rdfs:label :re2 "cleithrum#re2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0004741> :re2)
 
-# Individual: :re3 (:re3)
+# Individual: :re3 (hindlimb#re3)
 
+AnnotationAssertion(rdfs:label :re3 "hindlimb#re3"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002103> :re3)
 
-# Individual: :re5 (:re5)
+# Individual: :re5 (pedal digit 2#re5)
 
+AnnotationAssertion(rdfs:label :re5 "pedal digit 2#re5"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0003632> :re5)
 
-# Individual: :re9 (:re9)
+# Individual: :re9 (trunk vertebra#re9)
 
+AnnotationAssertion(rdfs:label :re9 "trunk vertebra#re9"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0011677> :re9)
 
-# Individual: :t10 (:t10)
+# Individual: :t10 (Adrianichthys oophorus#t10)
 
+AnnotationAssertion(rdfs:label :t10 "Adrianichthys oophorus#t10"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0055067> :t10)
 
-# Individual: :t11 (:t11)
+# Individual: :t11 (Triadobatrachus massinoti#t11)
 
+AnnotationAssertion(rdfs:label :t11 "Triadobatrachus massinoti#t11"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9030624> :t11)
 
-# Individual: :t12 (:t12)
+# Individual: :t12 (Hippopotamus amphibius#t12)
 
+AnnotationAssertion(rdfs:label :t12 "Hippopotamus amphibius#t12"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0011379> :t12)
 
-# Individual: :t13 (:t13)
+# Individual: :t13 (Xenophrys aceras#t13)
 
+AnnotationAssertion(rdfs:label :t13 "Xenophrys aceras#t13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0002590> :t13)
 
-# Individual: :t2 (:t2)
+# Individual: :t2 (Acestrorhynchus pantaneiro#t2)
 
+AnnotationAssertion(rdfs:label :t2 "Acestrorhynchus pantaneiro#t2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0038614> :t2)
 
-# Individual: :t3 (:t3)
+# Individual: :t3 (Eoraptor lunensis#t3)
 
+AnnotationAssertion(rdfs:label :t3 "Eoraptor lunensis#t3"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9007897> :t3)
 
-# Individual: :t4 (:t4)
+# Individual: :t4 (Pteropus giganteus#t4)
 
+AnnotationAssertion(rdfs:label :t4 "Pteropus giganteus#t4"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0008902> :t4)
 
-# Individual: :t5 (:t5)
+# Individual: :t5 (Dasypus novemcinctus#t5)
 
+AnnotationAssertion(rdfs:label :t5 "Dasypus novemcinctus#t5"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0008116> :t5)
 
-# Individual: :t6 (:t6)
+# Individual: :t6 (Myotis lucifugus#t6)
 
+AnnotationAssertion(rdfs:label :t6 "Myotis lucifugus#t6"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0009815> :t6)
 
-# Individual: :t7 (:t7)
+# Individual: :t7 (Callobatrachus sanyanensis#t7)
 
+AnnotationAssertion(rdfs:label :t7 "Callobatrachus sanyanensis#t7"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9003126> :t7)
 
-# Individual: :t8 (:t8)
+# Individual: :t8 (Glyptolepis#t8)
 
+AnnotationAssertion(rdfs:label :t8 "Glyptolepis#t8"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9011119> :t8)
 
-# Individual: :t9 (:t9)
+# Individual: :t9 (Acanthostega gunnari#t9)
 
+AnnotationAssertion(rdfs:label :t9 "Acanthostega gunnari#t9"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9001290> :t9)
 
 
