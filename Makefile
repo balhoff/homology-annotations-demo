@@ -7,7 +7,7 @@
 RELATIONS=--term obo:BFO_0000050 --term obo:RO_0002202 --term obo:RO_0002160 --term obo:RO_0002162
 
 .PHONY: all
-all: annotations-ream.ofn
+all: annotations-ream.ofn annotations-rolification.ofn
 
 annotation-terms.txt:
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
@@ -22,3 +22,7 @@ background.ofn: background-base.ofn relations.ofn annotation-terms.txt
 annotations-ream.ofn: annotations.ofn homology-ream.owl background.ofn relations.ofn
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
 	robot merge --input annotations.ofn --input homology-ream.owl --input background.ofn --input relations.ofn --output $@
+
+annotations-rolification.ofn: annotations.ofn homology-rolification.owl background.ofn relations.ofn
+	export ROBOT_JAVA_ARGS=-Xmx16G &&\
+	robot merge --input annotations.ofn --input homology-rolification.owl --input background.ofn --input relations.ofn --output $@
