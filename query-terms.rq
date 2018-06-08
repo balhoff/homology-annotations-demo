@@ -1,7 +1,7 @@
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-SELECT ?type
+SELECT DISTINCT ?term
 WHERE {
-  ?ind a owl:NamedIndividual .
-  ?ind a ?type .
-  FILTER(?type != owl:NamedIndividual)
+  { ?s1 ?p1 ?term . }
+  UNION
+  { ?term ?p2 ?o2 . }
+  FILTER(isIRI(?term))
 }
