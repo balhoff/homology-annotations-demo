@@ -9,7 +9,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/phenoscape/demo/phenoscape_homology.owl">
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homology Assertions</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homology Assertions using the rolification model</dc:description>
     </owl:Ontology>
     
 
@@ -219,6 +219,11 @@
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/6d3b31f6dc9152dbf89c5169a087e7917d0ecf2c#role2"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role1"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role2"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#role1"/>
             <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#role2"/>
@@ -372,6 +377,11 @@
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/c642580e953bf964b1316dbf5f826242f2dcf65d#role1"/>
             <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/c642580e953bf964b1316dbf5f826242f2dcf65d#role2"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role1"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role2"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/cbda33d1a455916fd33a88ed14c31c7cc8536c12#role1"/>
@@ -918,21 +928,21 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_HOM0000007"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#propertyChainAxiom"/>
         <owl:annotatedTarget rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#role1"/>
-            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#role2"/>
-        </owl:annotatedTarget>
-        <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#evidence"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_HOM0000007"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#propertyChainAxiom"/>
-        <owl:annotatedTarget rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/19d42cf50d3908b52a1335e975b202a9e114b190#role1"/>
             <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
             <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/19d42cf50d3908b52a1335e975b202a9e114b190#role2"/>
         </owl:annotatedTarget>
         <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/19d42cf50d3908b52a1335e975b202a9e114b190#evidence"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_HOM0000007"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#propertyChainAxiom"/>
+        <owl:annotatedTarget rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#role1"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+            <rdf:Description rdf:about="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#role2"/>
+        </owl:annotatedTarget>
+        <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/d960cf7731e1016f8449685b2e922c9da636762f#evidence"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_HOM0000007"/>
@@ -1731,6 +1741,18 @@
     
 
 
+    <!-- http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role1 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role1"/>
+    
+
+
+    <!-- http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role2 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role2"/>
+    
+
+
     <!-- http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#role1 -->
 
     <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#role1"/>
@@ -2127,6 +2149,18 @@
     
 
 
+    <!-- http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role1 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role1"/>
+    
+
+
+    <!-- http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role2 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role2"/>
+    
+
+
     <!-- http://purl.phenoscape.org/homology/annotation/cbda33d1a455916fd33a88ed14c31c7cc8536c12#role1 -->
 
     <owl:ObjectProperty rdf:about="http://purl.phenoscape.org/homology/annotation/cbda33d1a455916fd33a88ed14c31c7cc8536c12#role1"/>
@@ -2456,6 +2490,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002102"/>
@@ -2492,6 +2532,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002534"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002542"/>
@@ -2513,6 +2559,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0004347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005417"/>
     
 
 
@@ -2687,6 +2739,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_4300013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_4300013"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_4300172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_4300172"/>
     
 
 
@@ -3929,6 +3987,21 @@
     </owl:Axiom>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role2"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002102"/>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -4254,6 +4327,21 @@
         </owl:annotatedTarget>
         <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/0195eca3f185515169adbdd0da1ad8bb77af76a7#evidence"/>
     </owl:Axiom>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002534"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#role1"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -4389,6 +4477,21 @@
         </owl:annotatedTarget>
         <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/0195eca3f185515169adbdd0da1ad8bb77af76a7#evidence"/>
     </owl:Axiom>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0005417"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role2"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -7915,6 +8018,21 @@
         </owl:annotatedTarget>
         <obo:RO_0002612 rdf:resource="http://purl.phenoscape.org/homology/annotation/a87fdf37066f1c0a31dc74cb0a9973cc250d120a#evidence"/>
     </owl:Axiom>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_4300172"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#role1"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>

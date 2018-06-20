@@ -271,6 +271,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002102"/>
@@ -307,6 +313,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002534"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002542"/>
@@ -328,6 +340,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0004347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005417"/>
     
 
 
@@ -502,6 +520,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_4300013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_4300013"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_4300172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_4300172"/>
     
 
 
@@ -2300,6 +2324,45 @@
     
 
 
+    <!-- http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#ancestor -->
+
+    <owl:NamedIndividual rdf:about="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#ancestor">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/has_historical_homology_member"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/has_historical_homology_member"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002534"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#ancestor -->
 
     <owl:NamedIndividual rdf:about="http://purl.phenoscape.org/homology/annotation/70c7c4e31a0e9b3ffd9141a9f7aed5f41fee7ce3#ancestor">
@@ -3925,6 +3988,45 @@
     
 
 
+    <!-- http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#ancestor -->
+
+    <owl:NamedIndividual rdf:about="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#ancestor">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/has_historical_homology_member"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0005417"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/has_historical_homology_member"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_4300172"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.phenoscape.org/homology/annotation/cbda33d1a455916fd33a88ed14c31c7cc8536c12#ancestor -->
 
     <owl:NamedIndividual rdf:about="http://purl.phenoscape.org/homology/annotation/cbda33d1a455916fd33a88ed14c31c7cc8536c12#ancestor">
@@ -4820,6 +4922,21 @@
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
+                <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#ancestor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002102"/>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -5015,6 +5132,21 @@
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002534"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
+                <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/6d934abed3a03f9c556baaecf6323c3e69adfe55#ancestor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002542"/>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -5085,6 +5217,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
                 <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/0195eca3f185515169adbdd0da1ad8bb77af76a7#ancestor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0005417"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
+                <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#ancestor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -7051,6 +7198,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
                 <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/a87fdf37066f1c0a31dc74cb0a9973cc250d120a#ancestor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_4300172"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/historical_homology_member_of"/>
+                <owl:hasValue rdf:resource="http://purl.phenoscape.org/homology/annotation/cbd41857a25969c15694b9d5efde8642c6af3859#ancestor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
