@@ -8,11 +8,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.org/phenoscape/demo/homology/annotations.ofn>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000467>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000574>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000587>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000645>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001483>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002261>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002445>))
@@ -22,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000152>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000154>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000976>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002101>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002103>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002398>))
@@ -30,7 +36,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003221>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003631>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003632>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004347>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004741>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005418>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0009749>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011677>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4200003>))
@@ -38,14 +47,19 @@ Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0002590>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008116>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008902>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0009815>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0010481>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0011379>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0014661>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0038614>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0039818>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0055067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9001290>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9003126>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9007897>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9010171>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9011119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9030624>))
+Declaration(Class(<http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>))
 Declaration(Class(:Question1))
 Declaration(Class(:Question2))
 Declaration(Class(:Question3a))
@@ -53,6 +67,7 @@ Declaration(Class(:Question3b))
 Declaration(Class(:Question4))
 Declaration(Class(:QuestionTaxon))
 Declaration(Class(:_CompetencyQuestion))
+Declaration(Class(:hind_flipper))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002503>))
@@ -62,7 +77,14 @@ Declaration(NamedIndividual(:e10))
 Declaration(NamedIndividual(:e11))
 Declaration(NamedIndividual(:e12))
 Declaration(NamedIndividual(:e13))
+Declaration(NamedIndividual(:e14))
+Declaration(NamedIndividual(:e15))
+Declaration(NamedIndividual(:e16))
+Declaration(NamedIndividual(:e17))
+Declaration(NamedIndividual(:e18))
+Declaration(NamedIndividual(:e19))
 Declaration(NamedIndividual(:e2))
+Declaration(NamedIndividual(:e20))
 Declaration(NamedIndividual(:e3))
 Declaration(NamedIndividual(:e4))
 Declaration(NamedIndividual(:e5))
@@ -74,7 +96,14 @@ Declaration(NamedIndividual(:q10))
 Declaration(NamedIndividual(:q11))
 Declaration(NamedIndividual(:q12))
 Declaration(NamedIndividual(:q13))
+Declaration(NamedIndividual(:q14))
+Declaration(NamedIndividual(:q15))
+Declaration(NamedIndividual(:q16))
+Declaration(NamedIndividual(:q17))
+Declaration(NamedIndividual(:q18))
+Declaration(NamedIndividual(:q19))
 Declaration(NamedIndividual(:q2))
+Declaration(NamedIndividual(:q20))
 Declaration(NamedIndividual(:q3))
 Declaration(NamedIndividual(:q4))
 Declaration(NamedIndividual(:q5))
@@ -92,7 +121,14 @@ Declaration(NamedIndividual(:t10))
 Declaration(NamedIndividual(:t11))
 Declaration(NamedIndividual(:t12))
 Declaration(NamedIndividual(:t13))
+Declaration(NamedIndividual(:t14))
+Declaration(NamedIndividual(:t15))
+Declaration(NamedIndividual(:t16))
+Declaration(NamedIndividual(:t17))
+Declaration(NamedIndividual(:t18))
+Declaration(NamedIndividual(:t19))
 Declaration(NamedIndividual(:t2))
+Declaration(NamedIndividual(:t20))
 Declaration(NamedIndividual(:t3))
 Declaration(NamedIndividual(:t4))
 Declaration(NamedIndividual(:t5))
@@ -155,6 +191,10 @@ Not: 6"^^xsd:string)
 EquivalentClasses(:QuestionTaxon ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0003631>)))
 SubClassOf(:QuestionTaxon :_CompetencyQuestion)
 
+# Class: :hind_flipper (:hind_flipper)
+
+SubClassOf(:hind_flipper <http://purl.obolibrary.org/obo/UBERON_0002103>)
+
 
 ############################
 #   Named Individuals
@@ -184,11 +224,53 @@ AnnotationAssertion(rdfs:label :e13 "manual digit 1#e13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0001463> :e13)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e13 :t13)
 
+# Individual: :e14 (limb bud#e14)
+
+AnnotationAssertion(rdfs:label :e14 "limb bud#e14"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0004347> :e14)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e14 :t14)
+
+# Individual: :e15 (pectoral fin bud#e15)
+
+AnnotationAssertion(rdfs:label :e15 "pectoral fin bud#e15"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172> :e15)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e15 :t15)
+
+# Individual: :e16 (paired fin bud#e16)
+
+AnnotationAssertion(rdfs:label :e16 "paired fin bud#e16"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002531> :e16)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e16 :t16)
+
+# Individual: :e17 (hindlimb bud#e17)
+
+AnnotationAssertion(rdfs:label :e17 "hindlimb bud#e17"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0005418> :e17)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e17 :t17)
+
+# Individual: :e18 (limb mesenchyme#e18)
+
+AnnotationAssertion(rdfs:label :e18 "limb mesenchyme#e18"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0009749> :e18)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e18 :t18)
+
+# Individual: :e19 (limb#e19)
+
+AnnotationAssertion(rdfs:label :e19 "limb#e19"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0002101> :e19)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e19 :t19)
+
 # Individual: :e2 (pectoral fin#e2)
 
 AnnotationAssertion(rdfs:label :e2 "pectoral fin#e2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/UBERON_0000151> :e2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e2 :t2)
+
+# Individual: :e20 (hind flipper#e20)
+
+AnnotationAssertion(rdfs:label :e20 "hind flipper#e20"^^xsd:string)
+ClassAssertion(:hind_flipper :e20)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002162> :e20 :t20)
 
 # Individual: :e3 (forelimb#e3)
 
@@ -266,6 +348,49 @@ AnnotationAssertion(rdfs:label :q13 "torsioned#q13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0002445> :q13)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q13 :e13)
 
+# Individual: :q14 (decreased size#q14)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q14 "MGI:J:185330"^^xsd:string)
+AnnotationAssertion(rdfs:label :q14 "decreased size#q14"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000587> :q14)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q14 :e14)
+
+# Individual: :q15 (aplastic#q15)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q15 "ZFIN:ZDB-FIG-100519-3"^^xsd:string)
+AnnotationAssertion(rdfs:label :q15 "aplastic#q15"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0001483> :q15)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q15 :e15)
+
+# Individual: :q16 (hypoplastic#q16)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q16 "ZFIN:ZDB-FIG-140516-12"^^xsd:string)
+AnnotationAssertion(rdfs:label :q16 "hypoplastic#q16"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000645> :q16)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q16 :e16)
+
+# Individual: :q17 (decreased size#q17)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q17 "MGI:0013169"^^xsd:string)
+AnnotationAssertion(rdfs:label :q17 "decreased size#q17"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000587> :q17)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q17 :e17)
+
+# Individual: :q18 (abnormal morphology#q18)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q18 "MGI:J:168038"^^xsd:string)
+AnnotationAssertion(rdfs:label :q18 "abnormal morphology#q18"^^xsd:string)
+ClassAssertion(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0000460>) :q18)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q18 :e18)
+
+# Individual: :q19 (decreased length#q19)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q19 "Gauthier et al. 1988"^^xsd:string)
+AnnotationAssertion(rdfs:comment :q19 "Limbs: short and stout"^^xsd:string)
+AnnotationAssertion(rdfs:label :q19 "decreased length#q19"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000574> :q19)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q19 :e19)
+
 # Individual: :q2 (position#q2)
 
 AnnotationAssertion(<http://purl.org/dc/terms/source> :q2 "Lucena-Menezes 1998"^^xsd:string)
@@ -274,6 +399,14 @@ AnnotationAssertion(rdfs:label :q2 "position#q2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000140> :q2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q2 :e2)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002503> :q2 :re2)
+
+# Individual: :q20 (present#20)
+
+AnnotationAssertion(<http://purl.org/dc/terms/source> :q20 "Tarasof and Fisher 1970"^^xsd:string)
+AnnotationAssertion(rdfs:comment :q20 "hind flipper present"^^xsd:string)
+AnnotationAssertion(rdfs:label :q20 "present#20"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PATO_0000467> :q20)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000052> :q20 :e20)
 
 # Individual: :q3 (length#q3)
 
@@ -384,10 +517,45 @@ ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0011379> :t12)
 AnnotationAssertion(rdfs:label :t13 "Xenophrys aceras#t13"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0002590> :t13)
 
+# Individual: :t14 (mouse#t14)
+
+AnnotationAssertion(rdfs:label :t14 "mouse#t14"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0014661> :t14)
+
+# Individual: :t15 (zebrafish#t15)
+
+AnnotationAssertion(rdfs:label :t15 "zebrafish#t15"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0039818> :t15)
+
+# Individual: :t16 (zebrafish#t16)
+
+AnnotationAssertion(rdfs:label :t16 "zebrafish#t16"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0039818> :t16)
+
+# Individual: :t17 (mouse#t17)
+
+AnnotationAssertion(rdfs:label :t17 "mouse#t17"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0014661> :t17)
+
+# Individual: :t18 (mouse#t18)
+
+AnnotationAssertion(rdfs:label :t18 "mouse#t18"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0014661> :t18)
+
+# Individual: :t19 (Dicynodontia#t19)
+
+AnnotationAssertion(rdfs:label :t19 "Dicynodontia#t19"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_9010171> :t19)
+
 # Individual: :t2 (Acestrorhynchus pantaneiro#t2)
 
 AnnotationAssertion(rdfs:label :t2 "Acestrorhynchus pantaneiro#t2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0038614> :t2)
+
+# Individual: :t20 (Callorhinus ursinus#t20)
+
+AnnotationAssertion(rdfs:label :t20 "Callorhinus ursinus#t20"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/VTO_0010481> :t20)
 
 # Individual: :t3 (Eoraptor lunensis#t3)
 
