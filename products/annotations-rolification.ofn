@@ -485,10 +485,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/VTO_9034468>))
 Declaration(Class(<http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>))
 Declaration(Class(:Question1))
 Declaration(Class(:Question2))
-Declaration(Class(:Question3a))
-Declaration(Class(:Question3b))
+Declaration(Class(:Question3))
 Declaration(Class(:Question4))
-Declaration(Class(:QuestionTaxon))
+Declaration(Class(:Question5))
 Declaration(Class(:_CompetencyQuestion))
 Declaration(Class(:forelimb_bud_mesenchyme))
 Declaration(Class(:forelimb_wing_bud))
@@ -5873,6 +5872,10 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_4300082> "metapterygium element"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_4300082> <http://purl.obolibrary.org/obo/UBERON_2101587>)
 
+# Class: <http://purl.obolibrary.org/obo/UBERON_4300172> (<http://purl.obolibrary.org/obo/UBERON_4300172>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_4300172> <http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>)
+
 # Class: <http://purl.obolibrary.org/obo/UBERON_4400000> (metapterygium cartilage)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.thefreedictionary.com/Metapterygium"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_4400000> "The posterior and innermost of the three principal basal cartilages in the fins of fishes."^^xsd:string)
@@ -7175,35 +7178,29 @@ Expect: 2, 3, 8"^^xsd:string)
 EquivalentClasses(:Question2 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0000024>)))
 SubClassOf(:Question2 :_CompetencyQuestion)
 
-# Class: :Question3a (:Question3a)
+# Class: :Question3 (:Question3)
 
-AnnotationAssertion(rdfs:comment :Question3a "Queries for historical homologues of a structure at a developmental stage should include homologous structures and subclasses, but not those that later develop from that structure.  For example, if a ‘limb bud’ and a ‘paired fin bud’ are related as homologues, a user would expect a query for homologues of ‘paired fin bud’ to return phenotypes for ‘limb bud’ and its subtypes (i.e., ‘forelimb bud’ and ‘hindlimb bud’), but not parts (e.g., ‘limb bud mesenchyme’).  A user would not expect to return structures that later form in the course of development (e.g., for a query for historical homologues of the ‘paired fin bud’, a user would not expect ‘limb’) (Figure 2)."^^xsd:string)
-EquivalentClasses(:Question3a ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0002531>)))
-SubClassOf(:Question3a :_CompetencyQuestion)
-
-# Class: :Question3b (:Question3b)
-
-AnnotationAssertion(rdfs:comment :Question3b "Likewise, a query for historical homologues of a particular structure should not return its developmental precursor (e.g., a query for the homologues of ‘paired fin’ should not return ‘limb bud’). This is because homology between structures is not implied across developmental stages (Figure 2)."^^xsd:string)
-EquivalentClasses(:Question3b ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0002534>)))
-SubClassOf(:Question3b :_CompetencyQuestion)
+AnnotationAssertion(rdfs:comment :Question3 "Queries for historical homologues of a structure at a developmental stage should include homologous structures and subclasses, but not those that later develop from that structure.  For example, if a ‘limb bud’ and a ‘paired fin bud’ are related as homologues, a user would expect a query for homologues of ‘paired fin bud’ to return phenotypes for ‘limb bud’ and its subtypes (i.e., ‘forelimb bud’ and ‘hindlimb bud’), but not parts (e.g., ‘limb bud mesenchyme’).  A user would not expect to return structures that later form in the course of development (e.g., for a query for historical homologues of the ‘paired fin bud’, a user would not expect ‘limb’) (Figure 2)."^^xsd:string)
+EquivalentClasses(:Question3 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0005417>)))
+SubClassOf(:Question3 :_CompetencyQuestion)
 
 # Class: :Question4 (:Question4)
 
-AnnotationAssertion(rdfs:comment :Question4 "Queries for serial homologues of a structure should return any serial homologue and its subtype(s), but not it parts, and not precursors or later developing structures. From a query on serial homologues of ‘hindlimb’, a user would expect to find ‘forelimb’ and its subtype (‘forelimb wing’) in the search results, but not the parts of forelimb (e.g., ‘humerus’). This is because serial homology between structures does not imply homology of their parts (Figure 2).
-
-Expect: 3, 4
-Not: 9"^^xsd:string)
-EquivalentClasses(:Question4 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0002103>)))
-SubClassOf(:Question4 :_CompetencyQuestion)
-
-# Class: :QuestionTaxon (:QuestionTaxon)
-
-AnnotationAssertion(rdfs:comment :QuestionTaxon "In cases where the homology statement applies to a subset of taxa which possess the anatomical structure, though other taxa may ostensibly possess it as well, a user expects results for only the subset of taxa with the homologous structure. For example, some users might expect queries for homologues of pedal digit 1 to return phenotypes for the ‘prehallux’ in only anurans.  This is because some author (Galis et al., 2001) stated that pedal digit 1 in taxon X is homologous to prehallux in anurans. However, other authors (e.g., Fabrezi, 2001, Galis et al., 2001) present evidence to the contrary.  Moreover a structure named ‘prehallux’ exists in non-anuran taxa, e.g., mammals, and the homology relationship across taxa is uncertain.  Rather than restrict users to particular views of homology or create taxon specific anatomical classes (e.g., ‘anuran prehallux’), we display homology statements in the KB and allow them to be filtered by taxon.  In the above case, for example, a user could decide to view only results for anurans.
+AnnotationAssertion(rdfs:comment :Question4 "In cases where the homology statement applies to a subset of taxa which possess the anatomical structure, though other taxa may ostensibly possess it as well, a user expects results for only the subset of taxa with the homologous structure. For example, some users might expect queries for homologues of pedal digit 1 to return phenotypes for the ‘prehallux’ in only anurans.  This is because some author (Galis et al., 2001) stated that pedal digit 1 in taxon X is homologous to prehallux in anurans. However, other authors (e.g., Fabrezi, 2001, Galis et al., 2001) present evidence to the contrary.  Moreover a structure named ‘prehallux’ exists in non-anuran taxa, e.g., mammals, and the homology relationship across taxa is uncertain.  Rather than restrict users to particular views of homology or create taxon specific anatomical classes (e.g., ‘anuran prehallux’), we display homology statements in the KB and allow them to be filtered by taxon.  In the above case, for example, a user could decide to view only results for anurans.
 
 Expect: 7
 Not: 6"^^xsd:string)
-EquivalentClasses(:QuestionTaxon ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0003631>)))
-SubClassOf(:QuestionTaxon :_CompetencyQuestion)
+EquivalentClasses(:Question4 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0003631>)))
+SubClassOf(:Question4 :_CompetencyQuestion)
+
+# Class: :Question5 (:Question5)
+
+AnnotationAssertion(rdfs:comment :Question5 "Queries for serial homologues of a structure should return any serial homologue and its subtype(s), but not it parts, and not precursors or later developing structures. From a query on serial homologues of ‘hindlimb’, a user would expect to find ‘forelimb’ and its subtype (‘forelimb wing’) in the search results, but not the parts of forelimb (e.g., ‘humerus’). This is because serial homology between structures does not imply homology of their parts (Figure 2).
+
+Expect: 3, 4
+Not: 9"^^xsd:string)
+EquivalentClasses(:Question5 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0002103>)))
+SubClassOf(:Question5 :_CompetencyQuestion)
 
 # Class: :forelimb_bud_mesenchyme (:forelimb_bud_mesenchyme)
 
