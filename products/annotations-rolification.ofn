@@ -7181,7 +7181,7 @@ SubClassOf(:Question2 :_CompetencyQuestion)
 # Class: :Question3 (:Question3)
 
 AnnotationAssertion(rdfs:comment :Question3 "Queries for historical homologues of a structure at a developmental stage should include homologous structures and subclasses, but not those that later develop from that structure.  For example, if a ‘limb bud’ and a ‘paired fin bud’ are related as homologues, a user would expect a query for homologues of ‘paired fin bud’ to return phenotypes for ‘limb bud’ and its subtypes (i.e., ‘forelimb bud’ and ‘hindlimb bud’), but not parts (e.g., ‘limb bud mesenchyme’).  A user would not expect to return structures that later form in the course of development (e.g., for a query for historical homologues of the ‘paired fin bud’, a user would not expect ‘limb’) (Figure 2)."^^xsd:string)
-EquivalentClasses(:Question3 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/UBERON_0005417>)))
+EquivalentClasses(:Question3 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>)))
 SubClassOf(:Question3 :_CompetencyQuestion)
 
 # Class: :Question4 (:Question4)
