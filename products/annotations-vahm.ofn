@@ -488,6 +488,7 @@ Declaration(Class(:Question2))
 Declaration(Class(:Question3))
 Declaration(Class(:Question4))
 Declaration(Class(:Question5))
+Declaration(Class(:Question6))
 Declaration(Class(:_CompetencyQuestion))
 Declaration(Class(:forelimb_bud_mesenchyme))
 Declaration(Class(:forelimb_wing_bud))
@@ -7116,6 +7117,11 @@ Expect: 3, 4
 Not: 9"^^xsd:string)
 EquivalentClasses(:Question5 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0002103>)))
 SubClassOf(:Question5 :_CompetencyQuestion)
+
+# Class: :Question6 (:Question6)
+
+EquivalentClasses(:Question6 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0005418>)))
+SubClassOf(:Question6 :_CompetencyQuestion)
 
 # Class: :forelimb_bud_mesenchyme (:forelimb_bud_mesenchyme)
 
