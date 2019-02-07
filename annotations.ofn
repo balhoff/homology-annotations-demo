@@ -166,7 +166,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/UBERON_4300172> (pectoral fin bud)
+# Class: <http://purl.obolibrary.org/obo/UBERON_4300172> (<http://purl.obolibrary.org/obo/UBERON_4300172>)
 
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_4300172> <http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>)
 
@@ -213,6 +213,10 @@ SubClassOf(:Question5 :_CompetencyQuestion)
 
 # Class: :Question6 (:Question6)
 
+AnnotationAssertion(rdfs:comment :Question6 "The user expects that a query for serial homologues of 'hindlimb bud' would return phenotypes for ‘forelimb bud’ and its subtype 'forelimb wing bud' (Figure 6), but not its developmental product 'forelimb', nor its parts (‘forelimb mesenchyme’), or its serial homologue ('pectoral fin bud’).
+
+Expects:
+Not:"^^xsd:string)
 EquivalentClasses(:Question6 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0005418>)))
 SubClassOf(:Question6 :_CompetencyQuestion)
 
