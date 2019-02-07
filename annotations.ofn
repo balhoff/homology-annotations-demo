@@ -7,6 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.org/phenoscape/demo/homology/annotations.ofn>
+Import(<http://purl.obolibrary.org/obo/uberon/ext.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
