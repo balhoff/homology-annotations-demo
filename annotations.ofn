@@ -49,6 +49,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4000175>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4200003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4300172>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4300239>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0002590>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008116>))
 Declaration(Class(<http://purl.obolibrary.org/obo/VTO_0008902>))
@@ -166,7 +167,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/UBERON_4300172> (pectoral fin bud)
+# Class: <http://purl.obolibrary.org/obo/UBERON_4300172> (<http://purl.obolibrary.org/obo/UBERON_4300172>)
 
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_4300172> <http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>)
 
@@ -189,7 +190,10 @@ SubClassOf(:Question2 :_CompetencyQuestion)
 
 # Class: :Question3 (:Question3)
 
-AnnotationAssertion(rdfs:comment :Question3 "The user expects a query for historical homologues of ‘pectoral fin bud’ to return phenotypes for ‘forelimb bud’ and its subtype ‘forelimb wing bud’ (Figure 3). They do not expect it to return phenotypes to parts (‘forelimb bud mesenchyme’), structures that form later in the course of development (‘forelimb’), or serial homologues (‘hindlimb bud’) of the historical homologues."^^xsd:string)
+AnnotationAssertion(rdfs:comment :Question3 "The user expects a query for historical homologues of ‘pectoral fin bud’ to return phenotypes for ‘forelimb bud’ and its subtype ‘forelimb wing bud’ (Figure 3). They do not expect it to return phenotypes to parts (‘forelimb bud mesenchyme’), structures that form later in the course of development (‘forelimb’), or serial homologues (‘hindlimb bud’) of the historical homologues.
+
+Expect: 21, 22
+Not: 3, 17, 23"^^xsd:string)
 EquivalentClasses(:Question3 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000007> <http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172>)))
 SubClassOf(:Question3 :_CompetencyQuestion)
 
@@ -213,10 +217,10 @@ SubClassOf(:Question5 :_CompetencyQuestion)
 
 # Class: :Question6 (:Question6)
 
-AnnotationAssertion(rdfs:comment :Question6 "The user expects that a query for serial homologues of 'hindlimb bud' would return phenotypes for ‘forelimb bud’ and its subtype 'forelimb wing bud' (Figure 6), but not its developmental product 'forelimb', nor its parts (‘forelimb mesenchyme’), or its serial homologue ('pectoral fin bud’).
+AnnotationAssertion(rdfs:comment :Question6 "The user expects that a query for serial homologues of 'hindlimb bud' would return phenotypes for ‘forelimb bud’ and its subtype 'forelimb wing bud' (Figure 6), but not its developmental product 'forelimb', nor its parts (‘forelimb bud mesenchyme’), or its serial homologue ('pectoral fin bud’).
 
-Expects:
-Not:"^^xsd:string)
+Expect: 21, 22
+Not: 3, 15, 23"^^xsd:string)
 EquivalentClasses(:Question6 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0005418>)))
 SubClassOf(:Question6 :_CompetencyQuestion)
 
@@ -224,8 +228,8 @@ SubClassOf(:Question6 :_CompetencyQuestion)
 
 AnnotationAssertion(rdfs:comment :Question7 "The user expects a phenotype query for serial homologues of ‘hind flipper’ to return phenotypes for ‘hindlimb’, its serial homologue ‘forelimb’, and subclasses of ‘forelimb’ such as ‘forelimb wing’, as illustrated in Figure 7. The user does not expect the query to return structures for parts (e.g., ‘humerus’, ‘femur’) of the serial homologues, historical homologues (e.g., ‘pectoral fin’) of the serial homologues, or developmental precursors (e.g., ‘hindlimb bud’, ‘forelimb bud’) of the serial homologues.
 
-Expect:
-Not:"^^xsd:string)
+Expect: 3, 4, 11
+Not: 2, 9, 17, 21"^^xsd:string)
 EquivalentClasses(:Question7 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_4300239>)))
 SubClassOf(:Question7 :_CompetencyQuestion)
 
