@@ -8,11 +8,11 @@
 RELATIONS=--term obo:RO_0002160 --term obo:RO_0002162 #--term obo:RO_0002202 --term obo:BFO_0000050 
 
 .PHONY: all
-all: annotations-reahm.ofn annotations-rolification.ofn annotations-vahm.ofn
+all: annotations-rea.ofn annotations-rolification.ofn annotations-ava.ofn
 
-annotation-terms.txt: annotations.ofn homology-reahm.owl
+annotation-terms.txt: annotations.ofn homology-rea.owl
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
-	robot merge --input annotations.ofn --input homology-reahm.owl query --select query-terms.rq $@
+	robot merge --input annotations.ofn --input homology-rea.owl query --select query-terms.rq $@
 
 background.ofn: background-base.ofn relations.ofn annotation-terms.txt
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
@@ -20,17 +20,17 @@ background.ofn: background-base.ofn relations.ofn annotation-terms.txt
 	grep -v '^Import(' background-merged.ofn | grep -v 'ObjectUnionOf' >background-trimmed.ofn &&\
 	robot filter --input background-trimmed.ofn $(RELATIONS) extract --method STAR --term-file annotation-terms.txt merge --input relations.ofn --output $@
 
-annotations-reahm.ofn: annotations.ofn homology-reahm.owl background.ofn relations.ofn
+annotations-rea.ofn: annotations.ofn homology-rea.owl background.ofn relations.ofn
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
-	robot merge --input annotations.ofn --input homology-reahm.owl --input background.ofn --input relations.ofn --output $@
+	robot merge --input annotations.ofn --input homology-rea.owl --input background.ofn --input relations.ofn --output $@
 
 annotations-rolification.ofn: annotations.ofn homology-rolification.owl background.ofn relations.ofn
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
 	robot merge --input annotations.ofn --input homology-rolification.owl --input background.ofn --input relations.ofn --output $@
 
-annotations-vahm.ofn: annotations.ofn homology-vahm.owl background.ofn relations.ofn
+annotations-ava.ofn: annotations.ofn homology-ava.owl background.ofn relations.ofn
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
-	robot merge --input annotations.ofn --input homology-vahm.owl --input background.ofn --input relations.ofn --output $@
+	robot merge --input annotations.ofn --input homology-ava.owl --input background.ofn --input relations.ofn --output $@
 
 forelimb-terms.txt:
 	export ROBOT_JAVA_ARGS=-Xmx16G &&\
