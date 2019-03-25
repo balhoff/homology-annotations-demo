@@ -2,6 +2,7 @@
 # This Makefile assumes you have Java 8 and robot on your PATH.
 # Robot can be obtained from GitHub:
 # - https://github.com/ontodev/robot
+# Currently ROBOT 1.0.0 is required for this workflow, due to changes in the the behavior of the 'filter' command.
 #########################################################################################################################
 
 RELATIONS=--term obo:RO_0002160 --term obo:RO_0002162 #--term obo:RO_0002202 --term obo:BFO_0000050 
