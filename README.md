@@ -1,4 +1,4 @@
-#Homology model demonstration
+# Homology model demonstration
 
 This project provide a GNU `make` workflow which converts Phenoscape's table of homology assertions (`homology_assertions.tsv`) into various OWL renderings (`homology-rea.ofn`, `homology-ava.ofn`, `homology-rolification.ofn`). It then extracts a subset of axioms from referenced OBO ontologies which are relevant to the homology assertions and also relevant to the demonstrator annotations used in the Phenoscape paper on homology models (`annotations.ofn`).
 
