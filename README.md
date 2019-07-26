@@ -11,6 +11,8 @@ You should have GNU `make` and Java (version 8 or greater) installed on your mac
 - [ROBOT](http://robot.obolibrary.org), a general purpose OWL manipulation tool
 - [Phenoscape kb-owl-tools](https://github.com/phenoscape/phenoscape-owl-tools), which contains the code which converts the homology assertions table into particular OWL models.
 
+To build the demonstration files, execute `make all` from the repository root directory.
+
 ## Pre-built products
 
 The `make` workflow allows you to see which code is executed to build the demonstration files. If you just want to explore these in Protégé, you can skip running the workflow and just view the pre-built versions in the `products` folder.
