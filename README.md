@@ -1,6 +1,6 @@
 # Homology model demonstration
 
-This project provide a GNU `make` workflow which converts Phenoscape's table of homology assertions (`homology_assertions.tsv`) into various OWL renderings (`homology-rea.ofn`, `homology-ava.ofn`, `homology-rolification.ofn`). It then extracts a subset of axioms (`background.ofn`) from referenced OBO ontologies (`background-base.ofn`) which are relevant to the homology assertions and also relevant to the demonstrator annotations (`annotations.ofn`) used in the Phenoscape paper on homology models.
+This project provide a GNU `make` workflow which converts Phenoscape's table of homology assertions (`homology_assertions.tsv`) into various OWL renderings (`homology-rea.ofn`, `homology-ava.ofn`, `homology-rolification.ofn`). It then extracts a subset of axioms (`background.ofn`) from referenced OBO ontologies (`background-base.ofn`) which are relevant to the homology assertions and also relevant to the demonstrator annotations and competency queries (`annotations.ofn`) used in the Phenoscape paper on homology models.
 
 The homology axioms and annotations OWL files contain only those OWL axioms, and not external information like term labels. The `all` target of the makefile produces three composite files (`annotations-rea.ofn`, `annotations-ava.ofn`, `annotations-rolification.ofn`), which are the end products to be explored in Protégé. These files include axioms merged from the homology assertions, demonstrator annotations, and referenced OBO ontologies.
 
