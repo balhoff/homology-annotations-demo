@@ -8,7 +8,7 @@ The homology axioms and annotations OWL files contain only those OWL axioms, and
 
 You should have GNU `make` and Java (version 8 or greater) installed on your machine. The makefile depends on two external tools, appropriate version of which are bundled in this repository and will be automatically used by the workflow:
 
-- [ROBOT](http://robot.obolibrary.org), a general purpose OWL manipulation tool
+- [ROBOT](http://robot.obolibrary.org), a general purpose OWL manipulation tool.
 - [Phenoscape kb-owl-tools](https://github.com/phenoscape/phenoscape-owl-tools), which contains the code which converts the homology assertions table into particular OWL models.
 
 To build the demonstration files, execute `make all` from the repository root directory.

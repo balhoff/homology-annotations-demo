@@ -173,7 +173,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_4300172> <http://purl.o
 
 # Class: :Question1 (:Question1)
 
-AnnotationAssertion(rdfs:comment :Question1 "The user expects a phenotype query for historical homologues of ‘pectoral fin’ to return phenotypes for its homologue ‘forelimb’ and its homologue’s subtype ‘forelimb wing’, as illustrated in Figure 1. The user does not expect the query to return phenotypes for parts of the homologue, such as ‘humerus’, nor phenotypes for the serial homologue of the homologue (‘hindlimb’). Further, they do not expect it to return phenotypes for the homologue’s developmental precursor ‘forelimb bud’. 
+AnnotationAssertion(rdfs:comment :Question1 "The user expects a phenotype query for historical homologues of ‘pectoral fin’ to return phenotypes for its homologue ‘forelimb’ and its homologue’s subtype ‘forelimb wing’, as illustrated in Figure 2. The user does not expect the query to return phenotypes for parts of the homologue, such as ‘humerus’, nor phenotypes for the serial homologue of the homologue (‘hindlimb’). Further, they do not expect it to return phenotypes for the homologue’s developmental precursor ‘forelimb bud’. 
 
 Expect: 3, 4
 Not: 10, 11, 12, 13"^^xsd:string)
@@ -190,7 +190,7 @@ SubClassOf(:Question2 :_CompetencyQuestion)
 
 # Class: :Question3 (:Question3)
 
-AnnotationAssertion(rdfs:comment :Question3 "The user expects a query for historical homologues of ‘pectoral fin bud’ to return phenotypes for ‘forelimb bud’ and its subtype ‘forelimb wing bud’ (Figure 3). They do not expect it to return phenotypes to parts (‘forelimb bud mesenchyme’), structures that form later in the course of development (‘forelimb’), or serial homologues (‘hindlimb bud’) of the historical homologues.
+AnnotationAssertion(rdfs:comment :Question3 "The user expects a query for historical homologues of ‘pectoral fin bud’ to return phenotypes for ‘forelimb bud’ and its subtype ‘forelimb wing bud’ (Figure 2). They do not expect it to return phenotypes to parts (‘forelimb bud mesenchyme’), structures that form later in the course of development (‘forelimb’), or serial homologues (‘hindlimb bud’) of the historical homologues.
 
 Expect: 21, 22
 Not: 3, 17, 23"^^xsd:string)
@@ -199,7 +199,7 @@ SubClassOf(:Question3 :_CompetencyQuestion)
 
 # Class: :Question4 (:Question4)
 
-AnnotationAssertion(rdfs:comment :Question4 "In cases where the homology statement selectively applies to a subset of taxa that possess the anatomical structure, though other taxa may ostensibly possess it as well, the user expects results for only a restricted set of taxa. The user expects a query for the historical homologues of ‘pedal digit 1’ to return ‘prehallux’ phenotypes for only anurans (frogs) and not ‘prehallux’ phenotypes for mammals (bats in our example) (Figure 4). This is because the homology relationship is specific to Anura and pedal digit 1.
+AnnotationAssertion(rdfs:comment :Question4 "In cases where the homology statement selectively applies to a subset of taxa that possess the anatomical structure, though other taxa may ostensibly possess it as well, the user expects results for only a restricted set of taxa. The user expects a query for the historical homologues of ‘pedal digit 1’ to return ‘prehallux’ phenotypes for only anurans (frogs) and not ‘prehallux’ phenotypes for mammals (bats in our example) (Figure 2). This is because the homology relationship is specific to Anura and pedal digit 1.
 
 Expect: 7
 Not: 6"^^xsd:string)
@@ -208,7 +208,7 @@ SubClassOf(:Question4 :_CompetencyQuestion)
 
 # Class: :Question5 (:Question5)
 
-AnnotationAssertion(rdfs:comment :Question5 "From a query on serial homologues of ‘hindlimb’, the user expects to find phenotypes for ‘forelimb’ and its subtype ‘forelimb wing’ (Figure 5). They do not expect historical homologues of the serial homologue (‘pectoral fin’) to be returned. Further, they do not expect phenotypes to parts of the homologue’s serial homologue (e.g., ‘humerus’ of the ‘forelimb’), or their developmental precursor (‘forelimb bud’ and ‘forelimb wing bud’).
+AnnotationAssertion(rdfs:comment :Question5 "From a query on serial homologues of ‘hindlimb’, the user expects to find phenotypes for ‘forelimb’ and its subtype ‘forelimb wing’ (Figure 3). They do not expect historical homologues of the serial homologue (‘pectoral fin’) to be returned. Further, they do not expect phenotypes to parts of the homologue’s serial homologue (e.g., ‘humerus’ of the ‘forelimb’), or their developmental precursor (‘forelimb bud’ and ‘forelimb wing bud’).
 
 Expect: 3, 4
 Not: 9"^^xsd:string)
@@ -217,7 +217,7 @@ SubClassOf(:Question5 :_CompetencyQuestion)
 
 # Class: :Question6 (:Question6)
 
-AnnotationAssertion(rdfs:comment :Question6 "The user expects that a query for serial homologues of 'hindlimb bud' would return phenotypes for ‘forelimb bud’ and its subtype 'forelimb wing bud' (Figure 6), but not its developmental product 'forelimb', nor its parts (‘forelimb bud mesenchyme’), or its serial homologue ('pectoral fin bud’).
+AnnotationAssertion(rdfs:comment :Question6 "The user expects that a query for serial homologues of 'hindlimb bud' would return phenotypes for ‘forelimb bud’ and its subtype 'forelimb wing bud' (Figure 3), but not its developmental product 'forelimb', nor its parts (‘forelimb bud mesenchyme’), or its serial homologue ('pectoral fin bud’).
 
 Expect: 21, 22
 Not: 3, 15, 23"^^xsd:string)
@@ -226,7 +226,7 @@ SubClassOf(:Question6 :_CompetencyQuestion)
 
 # Class: :Question7 (:Question7)
 
-AnnotationAssertion(rdfs:comment :Question7 "The user expects a phenotype query for serial homologues of ‘hind flipper’ to return phenotypes for ‘hindlimb’, its serial homologue ‘forelimb’, and subclasses of ‘forelimb’ such as ‘forelimb wing’, as illustrated in Figure 7. The user does not expect the query to return structures for parts (e.g., ‘humerus’, ‘femur’) of the serial homologues, historical homologues (e.g., ‘pectoral fin’) of the serial homologues, or developmental precursors (e.g., ‘hindlimb bud’, ‘forelimb bud’) of the serial homologues.
+AnnotationAssertion(rdfs:comment :Question7 "The user expects a phenotype query for serial homologues of ‘hind flipper’ to return phenotypes for ‘hindlimb’, its serial homologue ‘forelimb’, and subclasses of ‘forelimb’ such as ‘forelimb wing’, as illustrated in Figure 3. The user does not expect the query to return structures for parts (e.g., ‘humerus’, ‘femur’) of the serial homologues, historical homologues (e.g., ‘pectoral fin’) of the serial homologues, or developmental precursors (e.g., ‘hindlimb bud’, ‘forelimb bud’) of the serial homologues.
 
 Expect: 3, 4, 11
 Not: 2, 9, 17, 21"^^xsd:string)
