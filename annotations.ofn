@@ -208,10 +208,10 @@ SubClassOf(:Question4 :_CompetencyQuestion)
 
 # Class: :Question5 (:Question5)
 
-AnnotationAssertion(rdfs:comment :Question5 "From a query on serial homologues of ‘hindlimb’, the user expects to find phenotypes for ‘forelimb’ and its subtype ‘forelimb wing’ (Figure 3). They do not expect historical homologues of the serial homologue (‘pectoral fin’) to be returned. Further, they do not expect phenotypes to parts of the homologue’s serial homologue (e.g., ‘humerus’ of the ‘forelimb’), or their developmental precursor (‘forelimb bud’ and ‘forelimb wing bud’).
+AnnotationAssertion(rdfs:comment :Question5 "From a query on serial homologues of ‘hindlimb’, the user expects to find phenotypes for ‘forelimb’ and its subtype ‘forelimb wing’ (Figure 3). They do not expect the subtype of the search term (‘hind flipper’) to be returned, or the historical homologues of the serial homologue (‘pectoral fin’) to be returned. Further, they do not expect phenotypes to parts of the homologue’s serial homologue (e.g., ‘humerus’ of the ‘forelimb’), or their developmental precursor (‘forelimb bud’ and ‘forelimb wing bud’).
 
 Expect: 3, 4
-Not: 9"^^xsd:string)
+Not: 2, 9, 20, 21, 22"^^xsd:string)
 EquivalentClasses(:Question5 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_0002103>)))
 SubClassOf(:Question5 :_CompetencyQuestion)
 
@@ -226,10 +226,10 @@ SubClassOf(:Question6 :_CompetencyQuestion)
 
 # Class: :Question7 (:Question7)
 
-AnnotationAssertion(rdfs:comment :Question7 "The user expects a phenotype query for serial homologues of ‘hind flipper’ to return phenotypes for ‘hindlimb’, its serial homologue ‘forelimb’, and subclasses of ‘forelimb’ such as ‘forelimb wing’, as illustrated in Figure 3. The user does not expect the query to return structures for parts (e.g., ‘humerus’, ‘femur’) of the serial homologues, historical homologues (e.g., ‘pectoral fin’) of the serial homologues, or developmental precursors (e.g., ‘hindlimb bud’, ‘forelimb bud’) of the serial homologues.
+AnnotationAssertion(rdfs:comment :Question7 "The user expects a phenotype query for serial homologues of ‘hind flipper’ to return phenotypes for its serial homologue ‘forelimb’, and subclasses of ‘forelimb’ such as ‘forelimb wing’, as illustrated in Figure 3. The user does not expect the query to return return the superclass of the search term (‘hindlimb’), structures for parts (e.g., ‘humerus’, ‘femur’) of the serial homologues, historical homologues (e.g., ‘pectoral fin’) of the serial homologues, or developmental precursors (e.g., ‘hindlimb bud’, ‘forelimb bud’) of the serial homologues.
 
-Expect: 3, 4, 11
-Not: 2, 9, 17, 21"^^xsd:string)
+Expect: 3, 4
+Not: 2, 9, 11, 17, 21"^^xsd:string)
 EquivalentClasses(:Question7 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_HOM0000027> <http://purl.obolibrary.org/obo/UBERON_4300239>)))
 SubClassOf(:Question7 :_CompetencyQuestion)
 
