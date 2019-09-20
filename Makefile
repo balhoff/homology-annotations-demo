@@ -51,10 +51,10 @@ forelimb-rolification.ofn: annotations-forelimb.ofn homology-rolification.ofn fo
 	$(ROBOT) merge --input annotations-forelimb.ofn --input homology-rolification.ofn --input forelimb-background.ofn --input relations.ofn --output $@
 
 homology-ava.ofn: homology_assertions.tsv
-	$(KB_OWL_TOOLS) homology-table-to-owl rea $< $@
+	$(KB_OWL_TOOLS) homology-table-to-owl ava $< $@
 
 homology-rea.ofn: homology_assertions.tsv
-	$(KB_OWL_TOOLS) homology-table-to-owl ava $< $@
+	$(KB_OWL_TOOLS) homology-table-to-owl rea $< $@
 
 homology-rolification.ofn: homology_assertions.tsv
 	$(KB_OWL_TOOLS) homology-table-to-owl rolification $< $@
